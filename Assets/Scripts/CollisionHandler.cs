@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,15 +7,18 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float loadDelay = 1f;
-
-    void OnTriggerEnter(Collider other)
+    [SerializeField] ParticleSystem crashVFX;
+    
+    void OnTriggerEnter(Collider other) 
     {
-        StartCrashSequence();
+        StartCrashSequence();    
     }
 
     void StartCrashSequence()
     {
+        crashVFX.Play();
         GetComponent<PlayerControls>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
         Invoke("ReloadLevel", loadDelay);
     }
 
@@ -23,4 +27,5 @@ public class CollisionHandler : MonoBehaviour
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
     }
+
 }

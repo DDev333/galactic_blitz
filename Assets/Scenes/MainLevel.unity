@@ -298,7 +298,7 @@ TerrainCollider:
   m_Material: {fileID: 0}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: c92ff47c5bc9f4545972967362bfdf02, type: 2}
-  m_EnableTreeColliders: 1
+  m_EnableTreeColliders: 0
 --- !u!218 &512651619
 Terrain:
   m_ObjectHideFlags: 0
@@ -661,19 +661,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1352569303 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4615881812288816290, guid: 1979cc1fb0db05e4d9f0108aedb79048, type: 3}
-  m_PrefabInstance: {fileID: 8273586095827743184}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1452732020 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8273586097145683876, guid: 1979cc1fb0db05e4d9f0108aedb79048, type: 3}
-  m_PrefabInstance: {fileID: 8273586095827743184}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1846528116 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6775863312450241704, guid: 1979cc1fb0db05e4d9f0108aedb79048, type: 3}
   m_PrefabInstance: {fileID: 8273586095827743184}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8273586095827743184
@@ -683,18 +673,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5965662391725179418, guid: 1979cc1fb0db05e4d9f0108aedb79048, type: 3}
-      propertyPath: lasers.Array.size
-      value: 2
+    - target: {fileID: 3230048307019429173, guid: 1979cc1fb0db05e4d9f0108aedb79048, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.1
       objectReference: {fileID: 0}
-    - target: {fileID: 5965662391725179418, guid: 1979cc1fb0db05e4d9f0108aedb79048, type: 3}
-      propertyPath: lasers.Array.data[0]
-      value: 
-      objectReference: {fileID: 1352569303}
-    - target: {fileID: 5965662391725179418, guid: 1979cc1fb0db05e4d9f0108aedb79048, type: 3}
-      propertyPath: lasers.Array.data[1]
-      value: 
-      objectReference: {fileID: 1846528116}
+    - target: {fileID: 7859085053243340504, guid: 1979cc1fb0db05e4d9f0108aedb79048, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8273586097145683874, guid: 1979cc1fb0db05e4d9f0108aedb79048, type: 3}
       propertyPath: m_Name
       value: Player Rig
